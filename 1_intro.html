@@ -1,0 +1,52 @@
+<html>
+    <head>
+<title>Set Up Of Jquery</title>
+    </head>
+    <body>
+        <!--
+            What is jQuery?
+jQuery is a lightweight, "write less, do more", JavaScript library.
+The purpose of jQuery is to make it much easier to use JavaScript on your website.
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+The jQuery library contains the following features:
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+
+Why jQuery?
+There are lots of other JavaScript libraries out there, but jQuery is probably the most popular, and also the most extendable.
+Many of the biggest companies on the Web use jQuery, such as:
+Google
+Microsoft
+IBM
+Netflix.
+Will jQuery work in all browsers?
+
+The jQuery team knows all about cross-browser issues, and they have written this knowledge into the jQuery library.
+ jQuery will run exactly the same in all major browsers.
+
+
+
+        -->
+<h2 id="heading">Setting</h2>
+<button onclick="fn1()"
+>click On me</button>
+    </body>
+    <script                           
+    src="https://code.jquery.com/jquery-3.5.1.js"                             
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">//If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).
+</script>
+   <!--<script src="E:\Bipin\Study Materal\JS\JQuery\jq.js"> //regular jquery library download. 
+
+   </script>-->  
+    <script>
+          function fn1()
+           {
+          $('#heading').fadeToggle(3000);//fadetoggle is to slowly, fastly display the text
+        }
+    </script>
+</html>

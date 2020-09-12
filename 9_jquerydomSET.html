@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>SET VALUES</title>
+    </head>
+    <h2>SET VALUE<p> Manipulation using DOM</p></h2>
+    <body>
+        
+        <p id="p1">This is paragraph</p>
+        <p id="p2">This is a another paragraph</p>
+        <p>Input field: <input type="text" id="p3" value="Mickey Mouse"></p>
+
+        <button id="btn1">SET TEXT</button>
+        <button id="btn2">SET HTML</button>
+        <button id="btn3">SET VALUE</button>
+    </body>
+
+    <script src="E:\Bipin\Study Materal\JS\JQuery\jq.js"></script>
+
+    <script>
+        //for text change
+            $(document).ready(function()
+            {
+                $("#btn1").click(function()
+                {
+                    $("#p1").text("TEXT CHANGED");
+                });
+           
+
+    //for html change
+   
+        $("#btn2").click(function()
+        {
+            $("#p2").html("<b>TEXT CHANGED BY USING html set()</b>");
+        });
+   
+            
+            //for value change.
+    
+                $("#btn3").click(function()
+                {
+                    $("#p3").val(" Donal Duck");
+                });
+            });
+    </script>
+</html>

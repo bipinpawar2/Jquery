@@ -1,0 +1,53 @@
+<!--
+    With jQuery, it is easy to add new elements/content.
+    1)append() - Inserts content at the end of the selected elements
+    2)prepend() - Inserts content at the beginning of the selected elements
+    3)after() - Inserts content after the selected elements
+    4)before() - Inserts content before the selected elements
+
+-->
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+          <p>Text Will Added After This.</p>
+          <button id="btn1">Append Text</button>
+          <ol>
+              <li>Dubai</li>
+              <li>America</li>
+          </ol>
+          <button id="btn2">Add</button>
+    </body>
+    <script src="E:\Bipin\Study Materal\JS\JQuery\jq.js"></script>
+<script>
+        $(document).ready(function()
+        {
+            $("#btn1").click(function()
+            {
+                $("p").append("<b>Text Is Added.</b>");
+                $("p").append("<br>");
+            });
+        });
+
+        //for adding .
+        $(document).ready(function()
+        {
+            $("#btn2").click(function()
+            {
+                $("ol").append("<li>America.</li>");
+              
+            });
+        });
+</script>
+</html>
+<!--
+    similarly we can do
+    prepend()
+    after(),
+    befor(),
+    remove(),
+    empty().// empty will on removetext inside the box.box will be visible.
+-->

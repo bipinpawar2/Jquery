@@ -1,0 +1,91 @@
+<!--
+The jquery synatx is for selecting the element and performing actions on it.
+Basic syntax is: $(selector).action()
+                     OR
+              $(selector).action(speed,callback())  //call back is optional.
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s).
+
+suppose we will take an example.
+  $('#heading').fadeToggle(3000);
+
+  $- is to access jquery .
+<p id="demo/heading">  ..//the demo/heading  and # is  for is start with #demo or #heading .is an selector or finiding query.
+    .fadeToogle is an action ..//slowly display text or fastely.
+
+-->
+<!--  *jQuery Selectors*
+jQuery selectors are one of the most important parts of the jQuery library.
+jQuery selectors allow you to select and manipulate HTML element(s).
+jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. 
+It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.
+All selectors in jQuery start with the dollar sign and parentheses: $().
+
+-->
+<html>
+    <head>
+        <script src="E:\Bipin\Study Materal\JS\JQuery\jq.js">
+            </script>
+<script>
+    /*   *The Document Ready Event*
+You might have noticed that all jQuery methods in our examples, are inside a document ready event:
+his is to prevent any jQuery code from running before the document is finished loading (is ready).
+It is good practice to wait for the document to be fully loaded and ready before working with it.
+ This also allows you to have your JavaScript code before the body of your document, in the head section
+
+    */
+      $(document).ready(function(){     // this another way to call function.
+      $("button").click(function(){
+      $("p").hide();                   //When a user clicks on a button, all <p> elements will be hidden:
+      });
+       });
+           </script>
+            </head>
+     <body>
+        <h2>This is a heading</h2>
+
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        
+        <button>Click me to hide paragraphs</button>
+    </body>
+</html>
+
+<!--  by using id selector.
+
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#test").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p id="test">This is another paragraph.</p>
+
+<button>Click me</button>
+-->
+<!--
+     *What is an events*
+    All the different visitors' actions that a web page can respond to are called events.
+   examples:
+-moving a mouse over an element
+-selecting a radio button
+-clicking on an element.
+1)click()--The click() method attaches an event handler function to an HTML element.
+           The function is executed when the user clicks on the HTML element.
+2)mouseenter() --The mouseenter() method attaches an event handler function to an HTML element.
+                  The function is executed when the mouse pointer enters the HTML element:
+3)hover()--The hover() method takes two functions and is a combination of the mouseenter() and mouseleave() method.
+4)focus()--The focus() method attaches an event handler function to an HTML form field.
+           The function is executed when the form field gets focus:e.g to do text box colour when we click.
+5)on()-Add one more event.
+
+        -->

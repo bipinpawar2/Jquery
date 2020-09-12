@@ -1,0 +1,33 @@
+<html>
+    <head>   <script src="E:\Bipin\Study Materal\JS\JQuery\jq.js" ></script>
+       
+
+    </head>
+    <body>
+        <p>
+            <p>If you click on the "Hide" button, I will disappear</p>
+<button id="p1">Hide The TExt</button>
+<button id="p2">show The TExt</button>
+
+
+
+        <script>
+        $(document).ready(function()
+        {
+            $('#p1').click(function()
+            {
+                $('p').hide();
+            });
+        
+        $('#p2').click(function()
+        {
+            $('p').show();   //we can give speed also.i.e. show(1000)
+        });
+    });
+        </script>
+        
+    </body>
+</html>
+<!--
+    fadein,fadeout,fadetoogle etc are more methods.
+-->
